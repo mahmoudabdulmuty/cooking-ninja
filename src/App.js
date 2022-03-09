@@ -1,13 +1,15 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Home from './pages/home/Home';
+import Navbar from './components/Navbar/Navbar';
 import Create from './pages/create/Create';
-import Search from './pages/search/Search';
+import Home from './pages/home/Home';
 import Recipe from './pages/recipe/Recipe';
+import Search from './pages/search/Search';
 
 function App() {
   return (
     <div className='App'>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/create' element={<Create />} />

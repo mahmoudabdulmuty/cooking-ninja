@@ -17,6 +17,15 @@ h3,
 p {
   margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 input,
 textarea {
   color: #333;
