@@ -1,3 +1,4 @@
+import RecipeList from '../../components/RecipeList/RecipeList';
 import { useFetch } from '../../hooks/useFetch';
 import './Home.scss';
 
@@ -12,8 +13,7 @@ const Home = () => {
     <div className='home'>
       {error && <div>error</div>}
       {isPending && <div>Loading ...</div>}
-      {recipes &&
-        recipes.map((recipe) => <h2 key={recipe.id}>{recipe.title}</h2>)}
+      {recipes && <RecipeList recipes={recipes} />}
     </div>
   );
 };
