@@ -1,4 +1,4 @@
-import RecipeList from '../../components/RecipeList/RecipeList';
+import RecipeList from '../../components/RecipeList';
 import { useFetch } from '../../hooks/useFetch';
 import './Home.scss';
 
